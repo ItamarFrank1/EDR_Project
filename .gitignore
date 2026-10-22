@@ -1,2 +1,4 @@
 __pycache__/
 venv/
+src/core/api_secrets.py
+src/local_cache.json
