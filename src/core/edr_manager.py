@@ -22,7 +22,7 @@ class EDRManager:
         for sig in signatures_list:
             self.db.add_signature(sig)
 
-        self.setup_demo_environment() # hash that exist the demo file as malware - כאן נעצרתי. לא לשכוח לעדכן בגיטהאב! 
+        self.setup_demo_environment() # hash that exist the demo file as malware
         demo_hash = hashlib.sha256(b"EDR_TEST").hexdigest() 
         self.db.add_signature(demo_hash)
 
